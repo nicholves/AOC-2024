@@ -36,6 +36,8 @@
 *.app
 
 # Visual studio junk
+*.iobj
+*.ipdb
 *.vsidx
 *.suo
 *.db
