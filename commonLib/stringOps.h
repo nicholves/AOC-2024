@@ -13,4 +13,6 @@ namespace common {
 	std::vector<std::string> stringSplit(std::string str, const std::string& delimiter);
 
 	void removeBlankStringFromStrings(std::vector<std::string>& strings);
+
+	bool isDigit(const char c);
 }
