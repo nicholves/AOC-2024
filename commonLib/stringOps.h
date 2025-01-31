@@ -5,6 +5,11 @@
 #include <fstream>
 
 namespace common {
+	enum DiagonalDir {
+		LeftToRight = 1,
+		RightToLeft = 2
+	};
+
 	std::string readFile(const char* path);
 
 	std::vector<std::string> readLines(const char* path);
@@ -15,4 +20,7 @@ namespace common {
 	void removeBlankStringFromStrings(std::vector<std::string>& strings);
 
 	bool isDigit(const char c);
+
+	std::vector<std::string> produceVerticalStrings(const std::vector<std::string>& input);
+	std::vector<std::string> produceDiagonalStrings(const std::vector<std::string>& input, DiagonalDir direction);
 }
